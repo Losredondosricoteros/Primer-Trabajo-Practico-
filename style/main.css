@@ -5,10 +5,10 @@
   --font-family: 'Roboto', sans-serf;
   --bold-font: 700;
   --bg-color: #fcfcfc;
-  --black-color: #000000;
-  --white_color: #ffffff;
+  --black-color: #dc2cece7;
+  --white_color: #f9e8fc;
   --primary-color: #4756df;
-  --secondary-color: #ff7235;
+  --secondary-color: #0c34e7;
   --primary-shadow: #8b8eaf;
   --transition: 0.3s;
 }
@@ -24,6 +24,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Poppins', sans-serif;
+  background-color: var(--white_color);
 }
 /*Contendor principal*/
 .grid-container {
@@ -39,6 +40,7 @@ body {
     'main'
     'footer';
 }
+
 
 /* Principio Header*/
 .header {
@@ -58,8 +60,9 @@ body {
 /*Contenedor Nombre y logo*/
 .bussines-box {
   display: flex;
-  flex-direction: row;
-  margin: 0.5em 1em;
+  justify-content: center;
+  /* flex-direction: row;
+  margin: 0.5em 1em; */
 }
 .header .Business_Name {
   color: greenyellow;
@@ -91,7 +94,7 @@ body {
   font-size: 16px;
   padding: 8px 5px;
   text-decoration: none;
-  color: white;
+  color: rgba(246, 250, 249, 0.89);
 }
 
 .menu-bar ul li a:hover {
@@ -203,7 +206,7 @@ body {
   align-items: center;
 }
 .article {
-  background-image: linear-gradient(to bottom right, red, yellow);
+  background-image: linear-gradient(to bottom right, rgb(178, 218, 245), rgb(245, 98, 213));
   border: 1px solid var(--black-color);
   border-radius: 0.85em;
   height: 10em;
