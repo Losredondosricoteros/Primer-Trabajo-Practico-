@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/ca5b005a55.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="./favicon/favicon.ico">
+    <link rel="icon" href="./favicon/DT1.ico">
 </head>
 
 <body>
@@ -22,8 +22,8 @@
         <header class="header">
             <p class="promotion">10% OFF abonando en efectivo.</p>
             <div class="bussines-box">
-                <img src="img/logo.jpg" width="100px" alt="">
-                <p class="Business_Name" style="font-weight: bold;">DIGITAL TECH</p>
+                <img src="img/Encabezado.png" width="600px" alt="">
+                <!-- <p class="Business_Name" style="font-weight: bold;">DIGITAL TECH</p> -->
 
             </div>
         </header>
@@ -73,8 +73,98 @@
         <!-- Inicio del Main -->
 
         <main class="main">
-
+                <section class="contenido">
+                    <div class="mostrador" id="mostrador">
+                        <div class="fila">
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/PC1.png" alt="">
+                                </div>
+                                <p class="descripcion">Pc Arquitectura Diseño Intel I7 10700 32gb 960gb Rtx 3060</p>
+                                <span class="precio">$ 985.000</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/PC2.png" alt="">
+                                </div>
+                                <p class="descripcion" id>Pc Armada Gamer Amd Ryzen 7 5700g Radeon 16gb Ssd 480gb </p>
+                                <span class="precio">$ 707.591</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/PC3.png" alt="">
+                                </div>
+                                <p class="descripcion">Pc Gamer Intel I9 13ava Z790 64gb M.2 2tb Sata 2tb Rtx 4090 </p>
+                                <span class="precio">$ 4.721.096</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/PC4.png" alt="">
+                                </div>
+                                <p class="descripcion">Pc Armada Gamer Ryzen7 5700g 16gb Ram 480ssd M.2 Pcie Nsx </p>
+                                <span class="precio">$ 535.999</span>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/imp1.png" alt="">
+                                </div>
+                                <p class="descripcion">Impresora Multifuncion Ricoh M 320 Con 2 Toners Originales</p>
+                                <span class="precio">$ 358.828</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/IMP2.png" alt="">
+                                </div>
+                                <p class="descripcion">Impresora a color multifunción Epson WorkForce Pro WF-C5790 con wifi blanca y negra 100V/240V</p>
+                                <span class="precio">$ 439.990</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/IMP3.png" alt="">
+                                </div>
+                                <p class="descripcion">Fotocopiadora Ricoh Im 430 F Nueva En Caja+envio</p>
+                                <span class="precio">$ 773.828</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/IMP4.png" alt="">
+                                </div>
+                                <p class="descripcion">Impresora A4 Sublimación Original Epson Sure Color F170</p>
+                                <span class="precio">$ 615.659</span>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+                    <div class="seleccion" id="seleccion">
+                        <div class="cerrar" onclick="cerrar()">
+                            &#x2715
+                        </div>
+                        <div class="info">
+                            <img src="img/IMAGEN1.png" alt="" id="img">
+                            <h2 id="modelo">NIKE MODEL 1</h2>
+                            <p id="descripcion">Descripción Modelo 1</p>
+            
+                            <span class="precio" id="precio">$ 130</span>
+            
+                            <div class="fila">
+                                <!-- <div class="size">
+                                    <label for="">SIZE</label>
+                                    <select name="" id="">
+                                        <option value="">40</option>
+                                        <option value="">42</option>
+                                        <option value="">44</option>
+                                        <option value="">46</option>
+                                    </select>
+                                </div> -->
+                                <button>AGREGAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
            
+                <script src="script.js"></script>
 
     </main>
     <!-- Fin Main -->
