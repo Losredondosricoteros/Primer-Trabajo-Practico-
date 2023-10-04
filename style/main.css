@@ -24,6 +24,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Poppins', sans-serif;
+  background-color: #ddd;
 }
 /*Contendor principal*/
 .grid-container {
@@ -59,13 +60,17 @@ body {
 .bussines-box {
   display: flex;
   flex-direction: row;
-  margin: 0.5em 1em;
+  margin: 0.5em 2em;
 }
 .header .Business_Name {
   color: greenyellow;
   font-size: 3rem;
   text-align: start;
   margin-left: 0.5rem;
+  padding-left: 5px;
+}
+.header .Business_Name:first-of-type {
+  color: #4756df;
 }
 
 /*Fin header*/
@@ -332,6 +337,224 @@ iframe {
 }
 /* Fin Gallery img */
 
+
+
+/* inicio contenido pagina acerca(solo el main)*/
+.acerc-sign {
+  width: 70%;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  background-image: url(../img/FONDO2.jpg);
+}
+
+.acerc-sign .poligono {
+  position: absolute;
+  width: 35%;
+
+  height: 100px;
+  transform: skew(20deg);
+  background: var(--secondary-color);
+  margin-top: 1em;
+  margin-left: 2em;
+  z-index: 0;
+}
+.acerc-sign h2 {
+  position: absolute;
+  width: 40%;
+  height: 100px;
+  font-size: 2.5rem;
+  padding-top: 2empx;
+  transform: skew(20deg);
+  background: rgb(88, 135, 206);
+  margin-top: 1em;
+  margin-left: 2.5em;
+  z-index: 1;
+}
+.acerc-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border: 1px solid var(--black-color);
+}
+.acerc-text h1 {
+  width: 90%;
+  text-align: center;
+}
+.acerc-text p {
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+.sellers {
+  width: 80%;
+}
+.sellers p {
+  text-align: start;
+  margin: 30px 0 10px 200px;
+}
+.sellers table {
+  margin: 10px auto;
+}
+.sellers th {
+  text-align: center;
+  color: white;
+  background-color: rgb(21, 117, 124);
+}
+
+.sellers tr:nth-child(even) {
+  background-color: #615d5d;
+}
+
+.sellers th,
+td {
+  border: 1px solid #979191;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.acerc-sign2 {
+  width: 70%;
+  height: auto;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.acerc-sign2 .poligono {
+  position: absolute;
+  width: 25%;
+
+  height: auto;
+  transform: skew(20deg);
+  background: var(--secondary-color);
+  margin-top: 20px;
+  margin-left: 100px;
+  z-index: 0;
+}
+.acerc-sign2 h2 {
+  position: absolute;
+  width: 50%;
+  height: 100px;
+  font-size: 2.5rem;
+  padding-top: 30px;
+  transform: skew(20deg);
+  background: rgb(88, 135, 206);
+  margin-top: 45px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.cbu-container {
+  display: flex;
+  flex-direction: row;
+
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 10px auto;
+  width: 50%;
+
+}
+.cbu-card {
+  width: 70%;
+  border: 1px solid var(--black-color);
+  margin: 10px auto;
+}
+/* Fin contenido pagina acerca */
+
+/* Inicio de contenido pagina registro.html y login.html (solo el main)*/
+.form-register {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.form-container {
+  background: var(--white_color);
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 3px;
+
+  width: min(90%, 750px);
+  border: 1px solid #aaa;
+}
+.form-container p {
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+.form-container .link {
+  text-decoration: none;
+  color: #1a2537;
+  font-weight: 600;
+}
+.form h1 {
+  text-align: center;
+  color: #1a2537;
+  font-size: 3rem;
+}
+.input-container input {
+  font-size: 20px;
+  width: 50%;
+  padding: 1px;
+}
+.input-container {
+  margin-bottom: 10px;
+}
+.icon {
+  min-width: 50px;
+  text-align: center;
+  color: #999;
+}
+.btn {
+  border: none;
+  width: 70%;
+  color: var(--white_color);
+  font-size: 20px;
+  background: #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: cadetblue;
+}
+
+/*Inicio pagina contacto.html (solo main)*/
+.contac-container {
+  width: 100%;
+}
+.adress {
+  width: 100%;
+  height: auto;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ 
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.adress li {
+  list-style: none;
+  padding-top: 20px;
+}
+.data-contact {
+  width: 50%;
+
+  text-align: left;
+  padding-left: 20px;
+}
+.iframe-maps {
+  width: 50%;
+align-self: auto;
+  padding: 10px;
+  
+}
 /*Formulario*/
 .formulario .form {
   width: 70%;
@@ -341,7 +564,7 @@ iframe {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 2em;
-  background-color: grey;
+  background-image: linear-gradient(to bottom right, rgb(0, 247, 255), rgb(0, 110, 255));
 }
 .formulario p {
   font-size: 1em;
@@ -379,6 +602,8 @@ iframe {
 
   align-self: self-end;
 }
+/* Fin formulario de Contacto*/
+
 /*Footer*/
 .footer {
   grid-area: footer;
@@ -398,10 +623,11 @@ iframe {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 3px;
 }
 .timetable {
   color: var(--white_color);
-  margin: 3px;
+  margin: 0 15px;
 }
 .footer .grupo-1 .box-logo {
   display: flex;
@@ -479,7 +705,7 @@ iframe {
   .hamburger {
     width: 30px;
     position: absolute;
-    top: 160px;
+    top: 125px;
     transform: translateY(-50%);
   }
   .hamburger span {
@@ -510,7 +736,7 @@ iframe {
   .menu-bar ul li {
     display: block;
     float: none;
-    border: 1px solid var(--primary-color);
+    border: 1px outset var(--primary-color);
   }
 
   .menu-bar ul li a {
@@ -583,6 +809,7 @@ iframe {
   height: auto;
 }
 
+
 @media screen and (max-width: 520px) {
   .header .Business_Name {
     font-size: 2rem;
@@ -628,10 +855,10 @@ iframe {
   /*Fin imagenes con efecto*/
   /* Contenedor de imagenes */
   .gallery-container {
-    width: 50%;
+    width: 80%;
     height: auto;
   }
-  
+
   .gg1 {
     width: 100%;
     height: auto;
