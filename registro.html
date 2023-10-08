@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <script src="js/script.js" defer></script>
+   
     <title>Digital Tech Informatica</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/ca5b005a55.js" crossorigin="anonymous"></script>
@@ -14,147 +14,157 @@
 </head>
 
 <body>
-    <!-- Contenedor Principal -->
-
     <div class="grid-container">
-        <!-- Header -->
-
         <header class="header">
-            <p class="promotion">10% OFF abonando en efectivo.</p>
-            <div class="bussines-box">
-                <img src="img/logotipo.ico" width="70px" alt="">
-                <p class="Business_Name" style="font-weight: bold;">DIGITAL</p>
-                <p class="Business_Name" style="font-weight: bold;">TECH</p>
-
+            <div class="header-sup">
+                <p>10% OFF abonando en efectivo.</p>
             </div>
-        </header>
-        <!-- Fin Header -->
-        <!-- Nav -->
-        <nav class="navbar">
-            <section class="menu-bar">
-                <div class="hamburger" onclick="mostrar()">
-                    <span></span><span></span><span></span>
+            <div class="header-inf">
+                <div class="header-logo">
+                    <img src="img/logotipo.ico" alt="">
+                </div>
+                <div class="header-name">
+                    <p>Digital</p>
+                    <p>Tech</p>
+
+                </div>
+                <div class="header-car">
+                    <div class="header-carrito">
+                        <a class="link-ingresar" style="cursor: pointer;" href="login.html" target="_blank"  >
+                            <span class="desc">
+                                <i class="fa fa-user"></i>
+                                <span class="username">
+                                    Ingresar
+                                </span>
+                            </span></a>
+        
+                        <a class="link-carrito" style="padding-left: 10px; cursor: pointer;" href="carrito.html">
+                            <span>
+                                <i class="fa fa-shopping-cart">
+                                </i>
+                        </a>
+                        <span id="contArticulos" class="" style="padding-left: 10px;">0</span>
+                        </i>
+                    </div>
                 </div>
 
-                <ul id="sliding_menu">
-                    <li><span class="close" onclick="ocultar()">X</span></li>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Producto</a></li>
-                    <li><a href="acerca.html">Nuestra Empresa</a></li>
-                    <li><a href="contacto.html">Contactenos</a></li>
-                    <li><a href="https://www.mercadolibre.com.ar/">Publicaciones en mercado libre</a></li>
-                </ul>
-            </section>
-        </nav>
-        <!-- Fin Navbar -->
-
-        <!-- Aside -> ingresar y carrito de compras -->
-        <aside class="aside">
-            <div class="header-carrito">
-                <a class="link-ingresar" style="cursor: pointer;" href="login.html">
-                    <span class="desc">
-                        <i class="fa fa-user"></i>
-                        <span class="username">
-                            Ingresar
-                        </span>
-                    </span></a>
-
-                <a class="link-carrito" style="padding-left: 10px; cursor: pointer;" href="carrito.html">
-                    <span>
-                        <i class="fa fa-shopping-cart">
-                        </i>
-                </a>
-                <span id="contArticulos" class="" style="padding-left: 10px;">0</span>
-                </i>
             </div>
 
-        </aside>
-        <!-- Fin aside -->
+        </header>
+        <nav class="nav">
+            <div class="navbar">
+                <!-- <section class="menu-bar"> -->
+                    <div class="hamburger" onclick="mostrar()">
+                        <span></span><span></span><span></span>
+                    </div>
+    
+                    <ul id="sliding_menu" >
+                        <li><span class="close" onclick="ocultar()">X</span></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="dropdown"><a href="productos.html">
+                            Categorias
+                            <div class="dropdown-content">
+                            <a href="componentes.html">Componentes de pc</a>
+                            <a href="pcs.html">PCs de Escritorio</a>
+                            <a href="notebook.html">Notebooks</a>
+                            <a href="monitores.html">Monitores</a>
+                            <a href="impresoras.html">Impresoras</a>
+                          </div></a></li>
+                        <li><a href="acerca.html">Nuestra Empresa</a></li>
+                        <li><a href="contacto.html">Contactenos</a></li>
+                        <li><a href="https://www.mercadolibre.com.ar/" target="_blank"  >Publicaciones en mercado libre</a></li>
+                    </ul>
+                <!-- </section> -->
 
-        <!-- Inicio del Main -->
-
+            </div>
+        </nav>
         <main class="main">
             <div class="form-register">
-            <form class="form-container">
-                <h1>Registrate</h1>
-                <div class="input-box">
-                    <div class="input-container">
-                        <i class='bx bxs-user  icon' ></i>
-                        <input type="text" placeholder="Nombre completo">
+                <form class="form-container">
+                    <h2>Registrate</h2>
+                    <div class="input-box">
+                        <div class="input-container">
+                            <i class='bx bxs-user  icon' ></i>
+                            <input type="text" id="name" placeholder="Nombre completo">
+                        </div>
+                        <div class="input-container">
+                            <i class='bx bxs-envelope icon'></i>
+                            <input type="mail" id="email" placeholder="Email">
+                        </div>
+                        <div class="input-container">
+                            <i class='bx bxs-key  icon'></i>
+                            <input type="password" id="password" placeholder="Contraseña">
+                        </div>
+                        <input type="submit" value="Registrate" class="btn">
+                        <p>Al Registrarte,aceptas nuestras condiciones de uso y politicas de privacidad</p>
+                        <p>¿Ya tienes una cuenta? <a href="login.html" class="link">Iniciar Sesión</a></p>
+    
+    
                     </div>
-                    <div class="input-container">
-                        <i class='bx bxs-envelope icon'></i>
-                        <input type="mail" placeholder="Email">
-                    </div>
-                    <div class="input-container">
-                        <i class='bx bxs-key  icon'></i>
-                        <input type="password" placeholder="Contraseña">
-                    </div>
-                    <input type="submit" value="Registrate" class="btn">
-                    <p>Al Registrarte,aceptas nuestras condiciones de uso y politicas de privacidad</p>
-                    <p>¿Ya tienes una cuenta? <a href="login.html" class="link">Iniciar Sesión</a></p>
-
-
+    
+    
+    
+    
+    
+                </form>
+    
+               
+            </div>
+            
+        </main>
+        <footer class="footer">
+            <div class="footer-sup">
+                <div class="logo-footer">
+                    <img class="box-logo" src="img/logotipo.ico" alt="">
                 </div>
-
-
-
-
-
-            </form>
-
-           
-        </div>
-    </main>
-    <!-- Fin Main -->
-
-    <!-- Inicio Footer -->
-    <footer class="footer">
-
-        <!-- <div class="footer-divisor"> -->
-        <div class="grupo-1">
-            <div class="box-timetable">
-                <img class="box-logo" src="img/logotipo.ico"  alt="">
-                <div class="timetable">
-                    <h2>Horaios:</h2>
+                <div class="contac-footer">
+                    <h2>CONTÁCTANOS:</h2>
+                    <ul class="contacto">
+                        <li>Av.Argentina 157</li>
+                        <li>Ciudad de Neuquen</li>
+                        <li>Email: digital-tech@gmail.com.ar</li>
+                    </ul>
+                   
+                </div>
+                <div class="schedule-footer">
+                    <h2>HORARIO:</h2>
                     <P>Lunes a Viernes</P>
                     <p>9 a 17 Horas</p>
                 </div>
-            </div>
-            <!-- Contactanos -->
-            <div class="box">
-                <h2>CONTÁCTANOS:</h2>
-                <ul class="contacto">
-                    <li>Av. Armada Argentina 3577</li>
-                    <li>Ciudad de Córdoba</li>
-                    <li>Email: digital-tech@gmail.com.ar</li>
-                </ul>
-            </div>
-
-            <!-- Redes Sociales -->
-            <div class="box">
-                <h2>SÍGUENOS EN:</h2>
+                <div class="follow-footer">
+                    <h2>SÍGUENOS EN:</h2>
                 <div class="red-social">
                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                     <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
                     <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
                     <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-
                 </div>
             </div>
-        </div>
-        <div class="grupo-2">
-            <p>2023 <b>Digital Tech</b> -Todos los derechos reservados-Defensa del consumidor-Para reclamos
-                <a href="https://autogestion.produccion.gob.ar/consumidores" rel="Defensa del consumidor">INGRESE
-                    AQUI</a>
-            </p>
-        </div>
-
-    </footer>
-
+            <div class="footer-inf">
+                <p>2023 <b>Digital Tech</b> -Todos los derechos reservados-Defensa del consumidor-Para reclamos
+                    <a href="https://autogestion.produccion.gob.ar/consumidores" rel="Defensa del consumidor">INGRESE
+                        AQUÍ</a>
+                </p>
+            </div>
+        </footer>
 
     </div>
-
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

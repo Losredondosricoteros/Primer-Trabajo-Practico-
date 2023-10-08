@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <script src="js/script.js" defer></script>
+   
     <title>Digital Tech Informatica</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/ca5b005a55.js" crossorigin="anonymous"></script>
@@ -14,465 +14,336 @@
 </head>
 
 <body>
-    <!-- Contenedor Principal -->
-
     <div class="grid-container">
-        <!-- Header -->
-
         <header class="header">
-            <p class="promotion">10% OFF abonando en efectivo.</p>
-            <div class="bussines-box">
-                <img src="img/logotipo.ico" width="70px" alt="">
-                <p class="Business_Name" style="font-weight: bold;">DIGITAL</p>
-                <p class="Business_Name" style="font-weight: bold;">TECH</p>
-
+            <div class="header-sup">
+                <p>10% OFF abonando en efectivo.</p>
             </div>
-        </header>
-        <!-- Fin Header -->
-        <!-- Nav -->
-        <nav class="navbar">
-            <section class="menu-bar">
-                <div class="hamburger" onclick="mostrar()">
-                    <span></span><span></span><span></span>
+            <div class="header-inf">
+                <div class="header-logo">
+                    <img src="img/logotipo.ico" alt="">
+                </div>
+                <div class="header-name">
+                    <p>Digital</p>
+                    <p>Tech</p>
+
+                </div>
+                <div class="header-car">
+                    <div class="header-carrito">
+                        <a class="link-ingresar" style="cursor: pointer;" href="login.html" target="_blank"  >
+                            <span class="desc">
+                                <i class="fa fa-user"></i>
+                                <span class="username">
+                                    Ingresar
+                                </span>
+                            </span></a>
+        
+                        <a class="link-carrito" style="padding-left: 10px; cursor: pointer;" href="carrito.html">
+                            <span>
+                                <i class="fa fa-shopping-cart">
+                                </i>
+                        </a>
+                        <span id="contArticulos" class="" style="padding-left: 10px;">0</span>
+                        </i>
+                    </div>
                 </div>
 
-                <ul id="sliding_menu">
-                    <li><span class="close" onclick="ocultar()">X</span></li>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Producto</a></li>
-                    <li><a href="acerca.html">Nuestra Empresa</a></li>
-                    <li><a href="contacto.html">Contactenos</a></li>
-                    <li><a href="https://www.mercadolibre.com.ar/">Publicaciones en mercado libre</a></li>
-                </ul>
-            </section>
-        </nav>
-        <!-- Fin Navbar -->
-
-        <!-- Aside -> ingresar y carrito de compras -->
-        <aside class="aside">
-            <div class="header-carrito">
-                <a class="link-ingresar" style="cursor: pointer;" href="login.html">
-                    <span class="desc">
-                        <i class="fa fa-user"></i>
-                        <span class="username">
-                            Ingresar
-                        </span>
-                    </span></a>
-
-                <a class="link-carrito" style="padding-left: 10px; cursor: pointer;" href="carrito.html">
-                    <span>
-                        <i class="fa fa-shopping-cart">
-                        </i>
-                </a>
-                <span id="contArticulos" class="" style="padding-left: 10px;">0</span>
-                </i>
             </div>
 
-        </aside>
-        <!-- Fin aside -->
+        </header>
+        <nav class="nav">
+            <div class="navbar">
+                <!-- <section class="menu-bar"> -->
+                    <div class="hamburger" onclick="mostrar()">
+                        <span></span><span></span><span></span>
+                    </div>
+    
+                    <ul id="sliding_menu" >
+                        <li><span class="close" onclick="ocultar()">X</span></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="dropdown"><a href="productos.html">
+                            Categorias
+                            <div class="dropdown-content">
+                            <a href="componentes.html">Componentes de pc</a>
+                            <a href="pcs.html">PCs de Escritorio</a>
+                            <a href="notebook.html">Notebooks</a>
+                            <a href="monitores.html">Monitores</a>
+                            <a href="impresoras.html">Impresoras</a>
+                          </div></a></li>
+                        <li><a href="acerca.html">Nuestra Empresa</a></li>
+                        <li><a href="contacto.html">Contactenos</a></li>
+                        <li><a href="https://www.mercadolibre.com.ar/" target="_blank"  >Publicaciones en mercado libre</a></li>
+                    </ul>
+                <!-- </section> -->
 
-        <!-- Inicio del Main -->
-
+            </div>
+        </nav>
         <main class="main">
-
-            <section class="text-h1">
-                <h1>Soluciones informatica, venta de hardware, software, insumos. </h1>
+            <section class="title-section">
+                <div class="h1-title">
+                   
+                        <h1>Soluciones informatica, venta de hardware, software, insumos. </h1>
+                    
+                </div>
+                <div class="graf-title">
+                    <img src="img/graf4.png" alt="">
+                </div>
+                
             </section>
-
-            <!--  Inicio Slider container -->
-            <section>
-                <div class="slider-frame">
+            <section class="slider-frame">
+                
                     <ul>
                         <li>
-                            <img src="./img/SLIDER 1.jpg" alt="imagen slider 1">
+                            <img src="./img/slider30.JPG" alt="imagen slider 1">
                         </li>
                         <li>
-                            <img src="./img/SLIDER 2.png" alt="imagen slider 2">
+                            <img src="./img/slider31.JPG" alt="imagen slider 2">
                         </li>
                         <li>
-                            <img src="./img/SLIDER 3.jpg" alt="imagen slider3">
+                            <img src="./img/slider32.png" alt="imagen slider3">
                         </li>
                         <li>
-                            <img src="./img/SLIDER 4.jpg" alt="imagen slider4">
+                            <img src="./img/slider33.JPG" alt="imagen slider4">
                         </li>
                     </ul>
-                </div>
+                
             </section>
 
-            <!-- Fin Slider container -->
+            <section class="info-section">
 
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
 
-            <!--Inicio Article container -->
-            <section class="article-container">
-                <div class="article">
-                    <h2 class="title-article">Empresa</h2>
-                    <p class="text-article">
-                        Desde hace más de 20 años, radicados en la zona sur de la Ciudad de Neuquen, nos dedicamos a la
-                        venta de tecnologia e informática, brindamos servicios acorde a sus necesidades.
-
-                        Trabajamos tanto con usuarios particulares como con empresas (privadas y gubernamentales). Con
-                        facilidades de pago, beneficios por volúmen, envíos a domicilio y una gran gama de productos y
-                        marcas a su disposición.
-
-                        Contamos con un punto de retiro (Pick Up Point) en Av.Argentina 157 y vendedores
-                        capacitados para atender sus necesidades de forma particular.
-                    </p>
-                </div>
             </section>
-            <!-- Fin Article container -->
-            <!-- Iframe ->video de youtube -->
-            <section>
+            <section class="iframe">
                 <iframe src="https://www.youtube.com/embed/pBJSZDryt3g?si=gri2ipsYZbJv7ClT" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             </section>
-            <!-- Fin Iframe -->
-
-           
-
-
-            <!-- Inicio gallery container -->
-            <section class="gallery-container">
-                <!-- Primera seccion de galeria -->
-                <div class="banner-container">
-                    <img src="img/IMAGEN12.png" alt="componenet pc">
+            <section class="banner-container-left">
+                <div class="banner">
+                    <img src="img/BANNER56.JPG" alt="">
                 </div>
-                <div class="gg1">
+            </section>
 
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/MOTHER2.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
+            <section class="card-section">
+                <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
+                <div class="carda-container">
+            <div class="card">
+                <img src="./img/afiche2.jpg" alt="" class="fict">
+            </div>
+            <div class="card">
+                <img src="./img/pc33.png" alt="" class="img-card">
+                <h4>$ 264990</h4>
+                <p>Pc Intel Celeron Dual Core G5905 SSD 240 Gb</p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="./img/pc31.png" alt="" class="img-card">
+                <h4>$ 865949</h4>
+                <p>Pc Gamer Intel Kairos Pro Core i7 10700 </p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="./img/pc32.png" alt="" class="img-card">
+                <h4>$ 299990</h4>
+                <p>Pc AMD Ryzen 5 4600G 16 Gb SSD 240Gb</p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+        </div>
+            </section>
 
-                            <p>$ 79.640</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/PC 1.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 45.900</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/PC 2.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 776.600</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/PC 3.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 459.300</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
+            <section class="banner-container-right">
+                <div class="banner">
+                    <img src="img/banner100.JPG" alt="">
                 </div>
-                <!-- Segunda seccion -->
-                <div class="banner-container">
-                    <img src="img/IMAGEN15.png" alt="componenet pc">
+            </section>
+            <section class="card-section">
+                <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
+                <div class="carda-container">
+            <div class="card">
+                <img src="./img/afiche3.JPG" alt="" class="fict">
+            </div>
+            <div class="card">
+                <img src="./img/notebook 1.png" alt="" class="img-card">
+                <h4>$ 399990</h4>
+                <p>Notebook Asus x513EA i3 1115C2 4Gb</p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="./img/notebook 2.png" alt="" class="img-card">
+                <h4>$ 174999</h4>
+                <p>Notebook Aiwa Cloudbook CA141-Intel N4020 </p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="./img/notebook 3.png" alt="" class="img-card">
+                <h4>$ 314990</h4>
+                <p>Notebook Noblex Core i3 1115G4 8 Gb</p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+        </div>
+            </section>
+            <section class="banner-container-left">
+            <div class="banner">
+                <img src="img/afichori1.JPG" alt="">
+            </div>
+        </section>
+            <section class="card-section">
+                <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
+                <div class="carda-container">
+            <div class="card">
+                <img src="./img/afiche5.png" alt="" class="fict">
+            </div>
+            <div class="card">
+                <img src="./img/almacenam30.png" alt="" class="img-card">
+                <h4>$ 53699</h4>
+                <p>Disco Solido SSd Kingston 512 Gb M2</p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="./img/almacenamiento31.png" alt="" class="img-card">
+                <h4>$ 39990</h4>
+                <p>Disco Solido SSd WD Westem Digital 250 Gb </p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="./img/almacenamiento33.png" alt="" class="img-card">
+                <h4>$ 34990</h4>
+                <p>Carry Disc Externo Adata EC7000</p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+        </div>
+            </section>
+            <section class="banner-container-right">
+                <div class="banner">
+                    <img src="img/banner101.JPG" alt="">
                 </div>
-                <div class="gg1">
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/cartucho10.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 45.900</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/TINTA 1.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 9.570</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/TINTA 2.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 8.238</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/TINTA 3.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 11.189</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
+            </section>
+            <section class="card-section">
+                <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
+                <div class="carda-container">
+            <div class="card">
+                <img src="./img/afiche1.png" alt="" class="fict">
+            </div>
+            <div class="card">
+                <img src="./img/gamer30.png" alt="" class="img-card">
+                <h4>$ 49990</h4>
+                <p>Fuente Corsair 550WCX550F Gamer</p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="./img/gamer31.png" alt="" class="img-card">
+                <h4>$ 99500</h4>
+                <p>Mouse inalambrico logitech G Pro X </p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="./img/gamer33.png" alt="" class="img-card">
+                <h4>$ 979999</h4>
+                <p>Smart TV 43 Samsung  Gamer NEOQLED</p>
+                <button  style="cursor: pointer">Comprar</button>
+            </div>
+        </div>
+            </section>
+            <section class="banner-container-left">
+                <div class="banner">
+                    <img src="img/aficho10.png" alt="">
                 </div>
-                <!-- Tercera Seccion -->
-                <div class="banner-container">
-                    <img src="img/IMAGEN14.png" alt="componenet pc">
+            </section>
+            <section class="info">
+            <div class="banner">
+                <div class="banner-ico"><i class='bx bxs-truck bx-lg'></i></div>
+                <div class="banner-text"><h3>ENVIAMOS TU COMPRÁ</h3>
+                    <P>ENTREGAS A TODO EL PAIS</P></div>
+                
+            </div>
+            <div class="banner">
+                <div class="banner-ico"><i class='bx bx-credit-card bx-lg'></i></div>
+                <div class="banner-text"><h3>PAGÁ COMO QUIERAS</h3>
+                    <P>TARJETAS DE CREDITO O DEBITO</P></div>
+                
+            </div>
+            <div class="banner">
+                <div class="banner-ico"><i class='bx bx-lock-alt bx-lg'></i></div>
+                <div class="banner-text"><h3>COMPRÁ CON SEGURIDAD</h3>
+                    <P>TUS DATOS SIEMPRE PROTEGIDOS</P></div>
+                
+            </div>
+        </section>
+            <section class="certificaition">
+               
+                <div class="cer-sup">
+                    <div class="logo-cert">
+                        <img src="./img/rec4.png" alt="">
+                    </div>
+                    <h2 class="h2-cert">
+                        Somos partners certificado de las principales marcas de tecnología.
+                    </h2>
                 </div>
-                <div class="gg1">
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/ALMACENA2.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 5.460</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/MEMORIA 1.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 3.200</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/MEMORIA 2.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 79.000</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/STOCK 1.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 4.578</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
+                
+                <div class="cert-inf">
+                    <img class="item1-cert" src="./img/rec1.png" alt="">
+                    <img class="item2-cert" src="./img/rec2.png" alt="">
+                    <img class="item3-cert" src="./img/rec3.png" alt="">
                 </div>
-                <!-- Cuarta Seccion -->
-                <div class="banner-container">
-                    <img src="img/IMAGENJ4.png" alt="componenet pc">
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-sup">
+                <div class="logo-footer">
+                    <img class="box-logo" src="img/logotipo.ico" alt="">
                 </div>
-                <div class="gg1">
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/INSUMOS4.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 7.423</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/insumo 1.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 16.525</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/insumo 2.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 8.460</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/insumo 3.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 6.789</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                </div>
-                <!-- Quinta Seccion -->
-                <div class="banner-container">
-                    <img src="img/IMAGEN10.png" alt="componenet pc">
-                </div>
-                <div class="gg1">
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/PC 1.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 45.900</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/GAMER 1.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 9.258</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/GAMER 2.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 57.290</p>
-                            <p>c/iva</p>
-                        </div>
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
-                    <div class="box-galery">
-                        <div class="box-img">
-                            <img src="./img/GAMER 3.JPG" alt="componenet pc">
-                        </div>
-                        <div class="box-detalle">
-
-                            <p>$ 15.650</p>
-                            <p>c/iva</p>
-                        </div>
-
-
-                        <a href="#" class="btn-img">Agregar al carrito</a>
-
-                    </div>
+                <div class="contac-footer">
+                    <h2>CONTÁCTANOS:</h2>
+                    <ul class="contacto">
+                        <li>Av.Argentina 157</li>
+                        <li>Ciudad de Neuquen</li>
+                        <li>Email: digital-tech@gmail.com.ar</li>
+                    </ul>
                    
-            </section>
-             <!-- Contenedor de imagenes con efecto object-fit,flex y transition -->
-             <section class="galleyry-img">
-                <img src="img/img2.JPG" alt="" class="img-x">
-                <img src="img/img3.JPG" alt="" class="img-x">
-                <img src="img/img4.JPG" alt="" class="img-x">
-                <img src="img/img5.jpg" alt="" class="img-x">
-            </section>
-
-           
-    </div>
-    </section>
-    <!-- Fin seccion de imagenen  -->
-   
-
-    </main>
-    <!-- Fin Main -->
-
-    <!-- Inicio Footer -->
-    <footer class="footer">
-
-        <!-- <div class="footer-divisor"> -->
-        <div class="grupo-1">
-            <div class="box-timetable">
-                <img class="box-logo" src="img/logotipo.ico" alt="">
-                <div class="timetable">
-                    <h2>Horaios:</h2>
+                </div>
+                <div class="schedule-footer">
+                    <h2>HORARIO:</h2>
                     <P>Lunes a Viernes</P>
                     <p>9 a 17 Horas</p>
                 </div>
-            </div>
-            <!-- Contactanos -->
-            <div class="box">
-                <h2>CONTÁCTANOS:</h2>
-                <ul class="contacto">
-                    <li>Av.Argentina 157</li>
-                    <li>Ciudad de Neuquen</li>
-                    <li>Email: digital-tech@gmail.com.ar</li>
-                </ul>
-            </div>
-
-            <!-- Redes Sociales -->
-            <div class="box">
-                <h2>SÍGUENOS EN:</h2>
+                <div class="follow-footer">
+                    <h2>SÍGUENOS EN:</h2>
                 <div class="red-social">
                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                     <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
                     <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
                     <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-
                 </div>
             </div>
-        </div>
-        <div class="grupo-2">
-            <p>2023 <b>Digital Tech</b> -Todos los derechos reservados-Defensa del consumidor-Para reclamos
-                <a href="https://autogestion.produccion.gob.ar/consumidores" rel="Defensa del consumidor">INGRESE
-                    AQUI</a>
-            </p>
-        </div>
-
-    </footer>
-
+            <div class="footer-inf">
+                <p>2023 <b>Digital Tech</b> -Todos los derechos reservados-Defensa del consumidor-Para reclamos
+                    <a href="https://autogestion.produccion.gob.ar/consumidores" rel="Defensa del consumidor">INGRESE
+                        AQUÍ</a>
+                </p>
+            </div>
+        </footer>
 
     </div>
-
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
