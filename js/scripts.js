@@ -11,6 +11,7 @@ function ocultar(){
 const nombreField = document.querySelector("[name=nombre]")
 const emailField = document.querySelector("[name=email]")
 const telField = document.querySelector("[name=tel]")
+const textoField = document.querySelector("[name=texto]")
 
 const setErrors = (message, field, isError = true) => {
     if (isError) {
@@ -52,8 +53,8 @@ const validateEmailFormat = e => {
   }
 nombreField.addEventListener("blur" , (e) => validateEmptyField("Ingrese su Nombre",e));
 emailField.addEventListener("blur" , (e) => validateEmptyField("Ingrese su email",e ));
-telField.addEventListener("blur" , (e) => validateEmptyField("ingrese su telefono",e));
-
+telField.addEventListener("blur" , (e) => validateEmptyField("Ingrese su telefono",e));
+textoField.addEventListener("blur" , (e) => validateEmptyField("Ingrese un Mensage",e));
 emailField.addEventListener("input", validateEmailFormat);
 
 

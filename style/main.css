@@ -583,14 +583,16 @@ justify-content: center;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- background-color: rgb(21, 117, 124);
+ border-radius: 2em;
+ background-color: rgb(100, 238, 88);
 
  margin:  15px auto;
 }
 .adress li {
   list-style: none;
   padding-top: 20px;
-  background-color: var(--white_color);
+  border-radius: 1em;
+  background-color: rgb(188, 245, 245);
   margin: 10px auto;
   padding: 10px;
 }
@@ -604,7 +606,6 @@ justify-content: center;
   width: 80%;
   margin-top: 10px;
   margin-left: 60px;
-  
 }
 /*Formulario*/
 .formulario .form {
