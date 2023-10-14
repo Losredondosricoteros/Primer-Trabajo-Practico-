@@ -10,7 +10,7 @@
   --black-color: #000000;
   --white_color: #ffffff;
   --primary-color: #27a3df;
-  --secondary-color: #ff7235;
+  --secondary-color: #3575ff;
   --primary-shadow: #5ccb5f;
 
 }
@@ -990,4 +990,14 @@ justify-content: center;
   .follow-footer {
     grid-column-end: span 12;
   }
+}
+/* validacion Formulario */
+.invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
+
+}
+.error {
+  color: red ;
+  display: block;
 }
