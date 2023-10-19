@@ -118,7 +118,8 @@
                     </div>
                 </div>
                 <!-- Inicio Formulario -->
-                <section class="formulario">
+                <!-- <section class="formulario" name="formulario"> -->
+                <form action="" class="formulario" id="formulario">    
                     <div class="form">
                         <p>¿Buscas lista de precios?</p>
                         <input type="text" name="nombre" placeholder="Ingrese su nombre">
@@ -129,9 +130,21 @@
                         <span></span>
                         <textarea rows="3" name="texto" placeholder="¿Como te podemos ayudar?"></textarea>
                         <span></span>
-                        <button class="button">Enviar</button>
+
+                        <!-- <button class="button">Enviar</button> -->
+
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                        </div>
+            
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="button" class="button">Enviar</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                        </div>
+
                     </div>
-                </section>
+                <!-- </section> -->
+                </form>
                 <!-- Fin Formulario -->
 
             

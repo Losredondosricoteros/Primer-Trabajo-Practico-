@@ -13,17 +13,27 @@ const nombreField = document.querySelector("[name=nombre]")
 const emailField = document.querySelector("[name=email]")
 const telField = document.querySelector("[name=tel]")
 const textoField = document.querySelector("[name=texto]")
+const formulario = document.getElementById('formulario')
+const btn = document.querySelector(".button")
 
+const campos = {
+	nombreField: false,
+	emailField: false,
+	telField: false,
+	textoField: false
+}
 // Funcion que cambia span para mostrar o quitar el mensaje de error
 const setErrors = (message, field, isError = true) => {
     if (isError) {
       field.classList.add("invalid");
       field.nextElementSibling.classList.add("error");
       field.nextElementSibling.innerText = message;
+      campos[field] = false;
     } else {
       field.classList.remove("invalid");
       field.nextElementSibling.classList.remove("error");
       field.nextElementSibling.innerText = "";
+      campos[field] = true;
     }
   }
 
@@ -45,8 +55,10 @@ const validateEmailFormat = e => {
     const regex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
     if (fieldValue.trim().length > 5 && !regex.test(fieldValue)) {
       setErrors("Por Favor ingrese un email valido", field);
+      campos[field] = false;
     } else {
       setErrors("", field, false);
+      campos[field] = true;
     }
   }
 
@@ -56,6 +68,29 @@ emailField.addEventListener("blur" , (e) => validateEmptyField("Ingrese su email
 telField.addEventListener("blur" , (e) => validateEmptyField("Ingrese su telefono",e));
 textoField.addEventListener("blur" , (e) => validateEmptyField("Ingrese un Mensage",e));
 emailField.addEventListener("input", validateEmailFormat);
+
+// Esta funcion toma el evento del boton enviar compara que los campos esten validados
+// muestra mensaje segun la situacion si todo esta correcto limpia los campos y da un mensaje de exito
+btn.addEventListener("click", (e) => {
+	e.preventDefault();
+ 
+	if(campos[nombreField]&& campos[emailField] && campos[telField] && campos[textoField]){
+    formulario.reset();
+  	document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
+		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+		setTimeout(() => {
+			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+		}, 5000);
+
+	} else {
+		document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+    document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+ 	}
+ });
+
+
+
+
 
 
 // //Validar Formulario
