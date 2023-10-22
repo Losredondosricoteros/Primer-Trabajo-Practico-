@@ -43,7 +43,7 @@
                                 <i class="fa fa-shopping-cart">
                                 </i>
                         </a>
-                        <span id="contArticulos" class="" style="padding-left: 10px;">0</span>
+                        <span id="contArticulos" class="contador" style="padding-left: 10px;">0</span>
                         </i>
                     </div>
                 </div>
@@ -79,38 +79,30 @@
             </div>
         </nav>
         <main class="main">
-            <div class="form-register">
-                <form class="form-container">
-                    <h2>Inicia Sesión</h2>
-                    <div class="input-box">
-                        
-                        <div class="input-container">
-                            <i class='bx bxs-envelope icon'></i>
-                           
-                            <input type="mail" id="email" placeholder="Email">
-                            
-                        </div>
-                        <div class="input-container">
-                            <i class='bx bxs-key  icon'></i>
-                          
-                            <input type="password" id="password" placeholder="Contraseña">
-                            
-                        </div>
-                        <input type="submit" onclick=' return enviarFormulario()' value="Ingresar" class="btn">
-                        
-                        <p>¿Aún no estas registrado? <a href="registro.html" class="link">Registrate</a></p>
-    
-                        <p class="Warning" id="error"></p>
-                    </div>
-    
-    
-    
-    
-    
-                </form>
+            <h1 class="welcome-form" >¡Bienvenido!</h1>
+            <form class="form-container" onsubmit="return validarFormulario()">
+                <h2 >Ingresar</h2>
+                <hr>
+                <label for="usuario">Usuario:(*)</label>
+                <input autofocus type="text" name="usuario" id="usuario" value="" placeholder="Ingrese su usuario" >
+                <span id="validar_usuario" style="color: #FF0000;" >&nbsp</span>
+                <br><br>
+                <label for="pass">Contraseña:(*)</label>
+                <input type="password" name="clave" id="pass" value="" placeholder="Ingrese su contraseña" >
+                <span id="validar_pass" style="color: #FF0000;" >&nbsp</span>
+                <br><br>
+                <input class="btn" type="submit" value="Enviar" >
+
+
+                <p class="aviso">
+                    <span class="obligatory-field"> * </span>los campos son obligatorios.
+                </p>	
+            
+            
+            </form>
     
                
-            </div>
+            
             
         </main>
         <footer class="footer">

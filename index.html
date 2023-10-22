@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-   
+
     <title>Digital Tech Informatica</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/ca5b005a55.js" crossorigin="anonymous"></script>
@@ -14,7 +14,10 @@
 </head>
 
 <body>
+    <!-- contenedor principla -->
     <div class="grid-container">
+
+        <!-- Inicio del header: contiene un parrafo de promo, el logo el nombre link Formulario con validacion de campos y carrito de compras(sin funcion aun) -->
         <header class="header">
             <div class="header-sup">
                 <p>10% OFF abonando en efectivo.</p>
@@ -28,22 +31,23 @@
                     <p>Tech</p>
 
                 </div>
+                <!-- Link al formulario de login  y carrito de compras -->
                 <div class="header-car">
                     <div class="header-carrito">
-                        <a class="link-ingresar" style="cursor: pointer;" href="login.html" target="_blank"  >
+                        <a class="link-ingresar" style="cursor: pointer;" href="login.html" target="_blank">
                             <span class="desc">
                                 <i class="fa fa-user"></i>
                                 <span class="username">
                                     Ingresar
                                 </span>
                             </span></a>
-        
+
                         <a class="link-carrito" style="padding-left: 10px; cursor: pointer;" href="carrito.html">
                             <span>
                                 <i class="fa fa-shopping-cart">
                                 </i>
                         </a>
-                        <span id="contArticulos" class="" style="padding-left: 10px;">0</span>
+                        <span id="contArticulos" class="contador" style="padding-left: 10px;">0</span>
                         </i>
                     </div>
                 </div>
@@ -51,246 +55,240 @@
             </div>
 
         </header>
+        <!-- Fin del header -->
+        <!-- Inicio del nav : contiene una barra escondida que aparece cuando la pantalla es menor a 900px con funciones de JS y un menu desplegable en categorias-->
         <nav class="nav">
             <div class="navbar">
                 <!-- <section class="menu-bar"> -->
-                    <div class="hamburger" onclick="mostrar()">
-                        <span></span><span></span><span></span>
-                    </div>
-    
-                    <ul id="sliding_menu" >
-                        <li><span class="close" onclick="ocultar()">X</span></li>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li class="dropdown"><a href="productos.html">
-                            Categorias
+                <div class="hamburger" onclick="mostrar()">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <ul id="sliding_menu">
+                    <li><span class="close" onclick="ocultar()">X</span></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown"><p >
+                            Categorias <span class="chevron-down"> <i class='bx bx-chevron-down' ></i></span>
                             <div class="dropdown-content">
-                            <a href="componentes.html">Componentes de pc</a>
-                            <a href="pcs.html">PCs de Escritorio</a>
-                            <a href="notebook.html">Notebooks</a>
-                            <a href="monitores.html">Monitores</a>
-                            <a href="impresoras.html">Impresoras</a>
-                          </div></a></li>
-                        <li><a href="acerca.html">Nuestra Empresa</a></li>
-                        <li><a href="contacto.html">Contactenos</a></li>
-                        <li><a href="https://www.mercadolibre.com.ar/" target="_blank"  >Publicaciones en mercado libre</a></li>
-                    </ul>
+                                <a href="componentes.html">Componentes de pc</a>
+                                <a href="pcs.html">PCs de Escritorio</a>
+                                <a href="notebook.html">Notebooks</a>
+                                <a href="monitores.html">Monitores</a>
+                                <a href="impresoras.html">Impresoras</a>
+                            </div>
+                        </p></li>
+                    <li><a href="acerca.html">Nuestra Empresa</a></li>
+                    <li><a href="contacto.html">Contactenos</a></li>
+                    <li><a href="https://www.mercadolibre.com.ar/" target="_blank">Publicaciones en mercado libre</a>
+                    </li>
+                </ul>
                 <!-- </section> -->
 
             </div>
-        </nav>
+        </nav> 
+        <!-- Fin del nav -->
+        <!-- Inicio del main: contiene el h1 con imagen un slider de imagenes , una seccion de algunos productos a la venta,y dos secciones mas a tipo informativo,falta agregarle funcionalidad para el carrito de compras -->
         <main class="main">
             <section class="title-section">
                 <div class="h1-title">
-                   
-                        <h1>Soluciones informatica, venta de hardware, software, insumos. </h1>
-                    
+
+                    <h1>Soluciones informatica, venta de hardware, software, insumos. </h1>
+
                 </div>
+                <!-- Slider imagenes realizadas con css -->
                 <div class="graf-title">
                     <img src="img/graf4.png" alt="">
                 </div>
-                
+
             </section>
             <section class="slider-frame">
-                
-                    <ul>
-                        <li>
-                            <img src="./img/slider30.JPG" alt="imagen slider 1">
-                        </li>
-                        <li>
-                            <img src="./img/slider31.JPG" alt="imagen slider 2">
-                        </li>
-                        <li>
-                            <img src="./img/slider32.png" alt="imagen slider3">
-                        </li>
-                        <li>
-                            <img src="./img/slider33.JPG" alt="imagen slider4">
-                        </li>
-                    </ul>
-                
-            </section>
 
-            <section class="info-section">
-
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
+                <ul>
+                    <li>
+                        <img src="./img/slider30.JPG" alt="imagen slider 1">
+                    </li>
+                    <li>
+                        <img src="./img/slider31.JPG" alt="imagen slider 2">
+                    </li>
+                    <li>
+                        <img src="./img/slider32.png" alt="imagen slider3">
+                    </li>
+                    <li>
+                        <img src="./img/slider33.JPG" alt="imagen slider4">
+                    </li>
+                </ul>
 
             </section>
-            <section class="iframe">
-                <iframe src="https://www.youtube.com/embed/pBJSZDryt3g?si=gri2ipsYZbJv7ClT" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </section>
-            <section class="banner-container-left">
-                <div class="banner">
-                    <img src="img/BANNER56.JPG" alt="">
-                </div>
-            </section>
 
+          
+           
+             <!-- Seccion de productos -->
             <section class="card-section">
                 <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
                 <div class="carda-container">
-            <div class="card">
-                <img src="./img/afiche2.jpg" alt="" class="fict">
-            </div>
-            <div class="card">
-                <img src="./img/pc33.png" alt="" class="img-card">
-                <h4>$ 264990</h4>
-                <p>Pc Intel Celeron Dual Core G5905 SSD 240 Gb</p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./img/pc31.png" alt="" class="img-card">
-                <h4>$ 865949</h4>
-                <p>Pc Gamer Intel Kairos Pro Core i7 10700 </p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./img/pc32.png" alt="" class="img-card">
-                <h4>$ 299990</h4>
-                <p>Pc AMD Ryzen 5 4600G 16 Gb SSD 240Gb</p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-        </div>
-            </section>
-
-            <section class="banner-container-right">
-                <div class="banner">
-                    <img src="img/banner100.JPG" alt="">
-                </div>
-            </section>
-            <section class="card-section">
-                <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
-                <div class="carda-container">
-            <div class="card">
-                <img src="./img/afiche3.JPG" alt="" class="fict">
-            </div>
-            <div class="card">
-                <img src="./img/notebook 1.png" alt="" class="img-card">
-                <h4>$ 399990</h4>
-                <p>Notebook Asus x513EA i3 1115C2 4Gb</p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./img/notebook 2.png" alt="" class="img-card">
-                <h4>$ 174999</h4>
-                <p>Notebook Aiwa CA141-Intel N4020 </p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./img/notebook 3.png" alt="" class="img-card">
-                <h4>$ 314990</h4>
-                <p>Notebook Noblex Core i3 1115G4 8 Gb</p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-        </div>
-            </section>
-            <section class="banner-container-left">
-            <div class="banner">
-                <img src="img/afichori1.JPG" alt="">
-            </div>
-        </section>
-            <section class="card-section">
-                <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
-                <div class="carda-container">
-            <div class="card">
-                <img src="./img/afiche5.png" alt="" class="fict">
-            </div>
-            <div class="card">
-                <img src="./img/almacenam30.png" alt="" class="img-card">
-                <h4>$ 53699</h4>
-                <p>Disco Solido SSd Kingston 512 Gb M2</p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./img/almacenamiento31.png" alt="" class="img-card">
-                <h4>$ 39990</h4>
-                <p>Disco Solido SSd WD Westem Digital 250 Gb </p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./img/almacenamiento33.png" alt="" class="img-card">
-                <h4>$ 34990</h4>
-                <p>Carry Disc Externo Adata EC7000</p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-        </div>
-            </section>
-            <section class="banner-container-right">
-                <div class="banner">
-                    <img src="img/banner101.JPG" alt="">
-                </div>
-            </section>
-            <section class="card-section">
-                <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
-                <div class="carda-container">
-            <div class="card">
-                <img src="./img/afiche1.png" alt="" class="fict">
-            </div>
-            <div class="card">
-                <img src="./img/gamer30.png" alt="" class="img-card">
-                <h4>$ 49990</h4>
-                <p>Fuente Corsair 550WCX550F Gamer</p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./img/gamer31.png" alt="" class="img-card">
-                <h4>$ 99500</h4>
-                <p>Mouse inalambrico logitech G Pro X </p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./img/gamer33.png" alt="" class="img-card">
-                <h4>$ 979999</h4>
-                <p>Smart TV 43 Samsung  Gamer NEOQLED</p>
-                <button  style="cursor: pointer">Comprar</button>
-            </div>
-        </div>
-            </section>
-            <section class="banner-container-left">
-                <div class="banner">
-                    <img src="img/aficho10.png" alt="">
-                </div>
-            </section>
-            <section class="info">
-            <div class="banner">
-                <div class="banner-ico"><i class='bx bxs-truck bx-lg'></i></div>
-                <div class="banner-text"><h3>ENVIAMOS TU COMPRÁ</h3>
-                    <P>ENTREGAS A TODO EL PAIS</P></div>
-                
-            </div>
-            <div class="banner">
-                <div class="banner-ico"><i class='bx bx-credit-card bx-lg'></i></div>
-                <div class="banner-text"><h3>PAGÁ COMO QUIERAS</h3>
-                    <P>TARJETAS DE CREDITO O DEBITO</P></div>
-                
-            </div>
-            <div class="banner">
-                <div class="banner-ico"><i class='bx bx-lock-alt bx-lg'></i></div>
-                <div class="banner-text"><h3>COMPRÁ CON SEGURIDAD</h3>
-                    <P>TUS DATOS SIEMPRE PROTEGIDOS</P></div>
-                
-            </div>
-        </section>
-            <section class="certificaition">
-               
-                <div class="cer-sup">
-                    <div class="logo-cert">
-                        <img src="./img/rec4.png" alt="">
+                    <div class="card">
+                        <img src="./img/afiche2.jpg" alt="" class="fict">
                     </div>
-                    <h2 class="h2-cert">
-                        Somos partners certificado de las principales marcas de tecnología.
-                    </h2>
-                </div>
-                
-                <div class="cert-inf">
-                    <img class="item1-cert" src="./img/rec1.png" alt="">
-                    <img class="item2-cert" src="./img/rec2.png" alt="">
-                    <img class="item3-cert" src="./img/rec3.png" alt="">
+                    <div class="card">
+                        <img src="./img/pc33.png" alt="" class="img-card">
+                        <h4>$ 264990</h4>
+                        <p>Pc Intel Celeron Dual Core G5905 SSD 240 Gb</p>
+                        <button style="cursor: pointer">Comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="./img/pc31.png" alt="" class="img-card">
+                        <h4>$ 865949</h4>
+                        <p>Pc Gamer Intel Kairos Pro Core i7 10700 </p>
+                        <button style="cursor: pointer">Comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="./img/pc32.png" alt="" class="img-card">
+                        <h4>$ 299990</h4>
+                        <p>Pc AMD Ryzen 5 4600G 16 Gb SSD 240Gb</p>
+                        <button style="cursor: pointer">Comprar</button>
+                    </div>
                 </div>
             </section>
+
+           
+            <section class="card-section">
+                <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
+                <div class="carda-container">
+                    <div class="card">
+                        <img src="./img/afiche3.JPG" alt="" class="fict">
+                    </div>
+                    <div class="card">
+                        <img src="./img/notebook 1.png" alt="" class="img-card">
+                        <h4>$ 399990</h4>
+                        <p>Notebook Asus x513EA i3 1115C2 4Gb</p>
+                        <button style="cursor: pointer">Comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="./img/notebook 2.png" alt="" class="img-card">
+                        <h4>$ 174999</h4>
+                        <p>Notebook Aiwa CA141-Intel N4020 </p>
+                        <button style="cursor: pointer">Comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="./img/notebook 3.png" alt="" class="img-card">
+                        <h4>$ 314990</h4>
+                        <p>Notebook Noblex Core i3 1115G4 8 Gb</p>
+                        <button style="cursor: pointer">Comprar</button>
+                    </div>
+                </div>
+                 </section>
+          
+                <section class="card-section">
+                    <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
+                    <div class="carda-container">
+                        <div class="card">
+                            <img src="./img/afiche5.png" alt="" class="fict">
+                        </div>
+                        <div class="card">
+                            <img src="./img/almacenam30.png" alt="" class="img-card">
+                            <h4>$ 53699</h4>
+                            <p>Disco Solido SSd Kingston 512 Gb M2</p>
+                            <button style="cursor: pointer">Comprar</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/almacenamiento31.png" alt="" class="img-card">
+                            <h4>$ 39990</h4>
+                            <p>Disco Solido SSd WD Westem Digital 250 Gb </p>
+                            <button style="cursor: pointer">Comprar</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/almacenamiento33.png" alt="" class="img-card">
+                            <h4>$ 34990</h4>
+                            <p>Carry Disc Externo Adata EC7000</p>
+                            <button style="cursor: pointer">Comprar</button>
+                        </div>
+                        
+                    </div>
+                </section>
+               
+                <section class="card-section">
+                    <h3 class="title-card">Aprovechá y renová tu Pc completa</h3>
+                    <div class="carda-container">
+                        <div class="card">
+                            <img src="./img/afiche1.png" alt="" class="fict">
+                        </div>
+                        <div class="card">
+                            <img src="./img/gamer30.png" alt="" class="img-card">
+                            <h4>$ 49990</h4>
+                            <p>Fuente Corsair 550WCX550F Gamer</p>
+                            <button style="cursor: pointer">Comprar</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/gamer31.png" alt="" class="img-card">
+                            <h4>$ 99500</h4>
+                            <p>Mouse inalambrico logitech G Pro X </p>
+                            <button style="cursor: pointer">Comprar</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/gamer33.png" alt="" class="img-card">
+                            <h4>$ 979999</h4>
+                            <p>Smart TV 43 Samsung Gamer NEOQLED</p>
+                            <button style="cursor: pointer">Comprar</button>
+                        </div>
+                    </div>
+                </section>
+           
+                    <section class="info">
+                        <div class="banner">
+                            <div class="banner-ico"><i class='bx bxs-truck bx-lg'></i></div>
+                            <div class="banner-text">
+                                <h3>ENVIAMOS TU COMPRÁ</h3>
+                                <P>ENTREGAS A TODO EL PAIS</P>
+                            </div>
+
+                        </div>
+                        <div class="banner">
+                            <div class="banner-ico"><i class='bx bx-credit-card bx-lg'></i></div>
+                            <div class="banner-text">
+                                <h3>PAGÁ COMO QUIERAS</h3>
+                                <P>TARJETAS DE CREDITO O DEBITO</P>
+                            </div>
+
+                        </div>
+                        <div class="banner">
+                            <div class="banner-ico"><i class='bx bx-lock-alt bx-lg'></i></div>
+                            <div class="banner-text">
+                                <h3>COMPRÁ CON SEGURIDAD</h3>
+                                <P>TUS DATOS SIEMPRE PROTEGIDOS</P>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="certificaition">
+
+                        <div class="cer-sup">
+                            <div class="logo-cert">
+                                <img src="./img/rec4.png" alt="">
+                            </div>
+                            <h2 class="h2-cert">
+                                Somos partners certificado de las principales marcas de tecnología.
+                            </h2>
+                        </div>
+
+                        <div class="cert-inf">
+                            <div class="img-certif"><img  src="./img/trafer1.png" alt=""></div>
+                            <div class="img-certif"><img  src="./img/trafer2.png" alt=""></div>
+                            <div class="img-certif"><img  src="./img/trafer3.png" alt=""></div>
+                            <div class="img-certif"><img  src="./img/trafer4.png" alt=""></div>
+                            
+                        </div>
+                    </section>
+                            
+                            
+                    <!-- Boton Go Top regresa arriva         -->
+                    <div class="go-top-container">
+                        <div class="go-top-btn">
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </div>
         </main>
+        <!-- Fin del main -->
+        <!-- Inicio de footer :contiene logo ,contacto,horario y  link redes sociales y Fin del main y un link a defensa del consumidor -->
         <footer class="footer">
             <div class="footer-sup">
                 <div class="logo-footer">
@@ -303,7 +301,7 @@
                         <li>Ciudad de Neuquen</li>
                         <li>Email: digital-tech@gmail.com.ar</li>
                     </ul>
-                   
+
                 </div>
                 <div class="schedule-footer">
                     <h2>HORARIO:</h2>
@@ -312,38 +310,28 @@
                 </div>
                 <div class="follow-footer">
                     <h2>SÍGUENOS EN:</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" ></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank" ></a>
+                        <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank" ></a>
+                        <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank" ></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-inf">
-                <p>2023 <b>Digital Tech</b> -Todos los derechos reservados-Defensa del consumidor-Para reclamos
-                    <a href="https://autogestion.produccion.gob.ar/consumidores" rel="Defensa del consumidor">INGRESE
-                        AQUÍ</a>
-                </p>
-            </div>
+                <div class="footer-inf">
+                    <p>2023 <b>Digital Tech</b> -Todos los derechos reservados-Defensa del consumidor-Para reclamos
+                        <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank"
+                            rel="Defensa del consumidor">INGRESE
+                            AQUÍ</a>
+                    </p>
+                </div>
         </footer>
 
     </div>
-<script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/appis.json"></script> 
+   
+    <script src="./js/scripts.js"></script>
+    <script src="./js/api.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

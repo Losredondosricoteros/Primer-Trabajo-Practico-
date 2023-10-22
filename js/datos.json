@@ -1,0 +1,36 @@
+{
+    "empleados": [
+
+            {
+                "foto": "./asesores/pablo.png",
+                "nombre": "Pablo",
+                "celular": "xxxxxxxxx",
+                "mail": "xxxx@xxx"
+            },
+            {
+                "foto": "./asesores/claudia.png",
+                "nombre": "Claudia",
+                "celular": "xxxxxxxxx",
+                "mail": "xxxx@xxx"
+            },
+            {
+                "foto": "./asesores/jose.png",
+                "nombre": "Jose",
+                "celular": "xxxxxxxxx",
+                "mail": "xxxx@xxx"
+            },
+            {
+                "foto": "./asesores/luis.png",
+                "nombre": "Luis",
+                "celular": "xxxxxxxxx",
+                "mail": "xxxx@xxx"
+            },
+            {
+                "foto": "./asesores/ana.png",
+                "nombre": "Ana",
+                "celular": "xxxxxxxxx",
+                "mail": "xxxx@xxx"
+            }
+        ]
+
+}
