@@ -118,34 +118,34 @@
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-               
-                <section class="sellers">
-                    <p>¿Quieres comprar? Estos vendedores lo atenderán:</p>
-                    <div  id="app">
-                       
-                        <table>
-                
-                            <tr>
-                                <th>Asesor Comercial</th>
-                                <th>Nombre</th>
-                                <th>WhatsApp</th>
-                                <th>Mail</th> 
+                    <section class="sellers">
+                        <p>¿Quieres comprar? Estos vendedores lo atenderán:</p>
+                        <div  id="app">
+                           
+                            <table>
+                    
+                                <tr>
+                                   
+                                    <th>Nombre</th>
+                                    <th>WhatsApp</th>
+                                    <th>Mail</th> 
+                                   
+                                </tr>
+                                <tr v-for="elemento in datos">
+                                    
+                                   
+                                    <td>{{elemento.nombre}}</td>
+                                    <td>{{elemento.celular}}</td>
+                                    <td>{{elemento.mail}}</td>
                                
-                            </tr>
-                            <tr v-for="elemento in datos">
-                                 <td> <img v-bind:src="elemento.foto" :alt="elemento.name"> </td> 
-                                <td>{{elemento.nombre}}</td>
-                                <td>{{elemento.celular}}</td>
-                                <td>{{elemento.mail}}</td>
-                            </tr>
-                        </table>
-                    </div>
-    
-                  
-                </section>
+                                </tr>
+                            </table>
+                        </div>
+        
+                      
+                    </section>
+                </div>
                 
-            </div>
-                <!-- Fin Formulario -->
                 <div class="go-top-container">
                     <div class="go-top-btn">
                         <i class="fas fa-chevron-up"></i>
