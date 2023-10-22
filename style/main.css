@@ -317,7 +317,7 @@ iframe {
 .card {
   grid-column-end: span 3;
   width: 200px;
-  height: 300px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -427,6 +427,9 @@ p {
   grid-column-end: span 1;
   margin-left: 1px;
 }
+.logo-cert img {
+  width: 100px;
+}
 .cert-inf {
   grid-column-end: span 12;
   margin: 20px auto;
@@ -434,10 +437,10 @@ p {
   display:grid;
   grid-template-columns: repeat(12, 1fr);
   justify-content: space-between;
-  gap: 5px;
+  gap: 2px;
 }
 .img-certif {
-  width: 200px;
+  width: 150px;
   margin: 5px auto;
   grid-column-end: span 3;
   
@@ -1097,13 +1100,18 @@ form {
   }
   .contac-footer {
     grid-column-end: span 12;
+    margin-left: 10px;
+    justify-content: start;
   }
   .schedule-footer {
     grid-column-end: span 12;
-   
+    margin-left: 10px;
+    justify-content: start;
   }
   .follow-footer {
     grid-column-end: span 12;
+    margin-left: 10px;
+    justify-content: start;
   }
   .footer-inf p {
     text-align: center;
