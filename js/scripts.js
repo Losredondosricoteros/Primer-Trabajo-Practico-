@@ -24,13 +24,13 @@ function ocultar(){
         .addEventListener('click',() =>{
            window.scrollTo({
            top:0,
-          behavior: 'smooth',
+            behavior: 'smooth',
      });
   });
-  
+  // Validar Formulario
   function validarFormulario() {
     // Obtener los valores ingresados por el usuario y recortar
-    // los posibles espacios en blanco al principio y al final.
+    
     let usuario = document.getElementById("usuario");
     let pass = document.getElementById("pass");
     let error = false;
@@ -67,7 +67,7 @@ function ocultar(){
       return true;
 }
   
-
+// Uso de una Api Local 
 const { createApp } = Vue
 createApp({
     data() {
