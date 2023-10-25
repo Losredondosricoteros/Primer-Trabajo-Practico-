@@ -3,7 +3,7 @@
 :root {
   --font-family: 'Roboto', sans-serf;
   --bold-font: 700;
-  --bg-color: #f3f3f3;
+  --bg-color: #d7e1e4;
   --bg-color2: darkslategray;
   --black-color: #000000;
   --white_color: #ffffff;
@@ -138,7 +138,7 @@ body {
   font-weight: 500;
   padding: 10px 3px;
   text-decoration: none;
-  color: #1d2fcc;
+  color: var(--black-color);
 }
 .navbar ul li span {
   color: #ba9abe;
@@ -149,10 +149,10 @@ body {
   color: var(--secondary-color);
 }
 .navbar ul li .chevron-down {
-  color: #1d2fcc;
+  color: var(--black-color);
 }
 .navbar ul li p {
-  color: #1d2fcc;
+  color: var(--black-color);
 }
 .navbar ul li p:hover {
   background: #1d2fcc;
@@ -160,7 +160,7 @@ body {
 }
 
 .navbar {
-  background-color: black;
+  background-color: #2071b2;
 }
 /* Menu desplegable de categorias */
 .dropdown-content {
@@ -168,8 +168,9 @@ body {
   position: absolute;
   width: 200px;
   overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(172, 117, 117, 0.4);
+  box-shadow: 0px 10px 10px 10px rgba(151, 39, 39, 0.4);
   z-index: 99;
+  
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -180,7 +181,7 @@ body {
   color: var(--black-color);
   padding: 5px;
   text-decoration: none;
-  background-color: var(--black-color);
+  background-color: #2071b2;
 }
 .dropdown-content a:hover {
   color: var(--black-color);
@@ -610,21 +611,16 @@ p {
   margin: 1rem 2rem;
 }
 .sellers table {
-  width: 100%;
+  width: 90%;
   margin: 10px auto;
 }
 
-.sellers p {
-  width: 20%;
-  grid-column-end: span 12;
-  margin-left: 40px;
-  color: var(--black-color);
-}
+
 
 .sellers td {
   color: var(--black-color);
   border: 1px solid black;
-  text-align: center;
+  text-align: start;
 
 }
 
@@ -640,10 +636,10 @@ td {
   border: 1px solid #292969;
 }
 .sellers p {
-  width: 100%;
+  width: 90%;
   color: var(--black-color);
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 30px;
   text-align: start;
 }
 /* Fin asesores comerciales*/
@@ -885,7 +881,7 @@ form {
   .hamburger span {
     margin-bottom: 3px;
     margin-left: 10px;
-    background-color: var(--secondary-color);
+    background-color: #2071b2;
     display: block;
     height: 5px;
   }
@@ -896,7 +892,7 @@ form {
     position: fixed;
     top: 0;
     bottom: 0;
-    background-color: black;
+    background-color: var(--white_color);
     margin: 0px;
     padding-top: 60px;
     transition: 1s;
@@ -1065,7 +1061,9 @@ form {
   .img-contac img {
     width: 320px;
   }
-
+  .adress {
+    width: 100%;
+  }
   /*footer*/
   .logo-footer {
     grid-column-end: span 12;
