@@ -1,0 +1,35 @@
+{
+    "empleados": [
+
+            {
+                "nombre": "Pablo",
+                "celular": "299-578421",
+                "mail": "pablo1o@hotmail.com"
+            },
+            {
+                
+                "nombre": "Claudia",
+                "celular": "299-853643",
+                "mail": "clau.91@gmail.com"
+            },
+            {
+                
+                "nombre": "Jose",
+                "celular": "299-574254",
+                "mail": "jose-bruno@gmail.com"
+            },
+            {
+                
+                "nombre": "Luis",
+                "celular": "299-5986374",
+                "mail": "lucho783@hotmail.com"
+            },
+            {
+                
+                "nombre": "Ana",
+                "celular": "299-572135",
+                "mail": "ana-ruiz@gmail.com"
+            }
+        ]
+
+}

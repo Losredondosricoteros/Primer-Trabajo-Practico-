@@ -43,7 +43,7 @@
                                 <i class="fa fa-shopping-cart">
                                 </i>
                         </a>
-                        <span id="contArticulos" class="" style="padding-left: 10px;">0</span>
+                        <span id="contArticulos" class="contador" style="padding-left: 10px;">0</span>
                         </i>
                     </div>
                 </div>
@@ -58,21 +58,23 @@
                         <span></span><span></span><span></span>
                     </div>
     
-                    <ul id="sliding_menu" >
+                    <ul id="sliding_menu">
                         <li><span class="close" onclick="ocultar()">X</span></li>
                         <li><a href="index.html">Inicio</a></li>
-                        <li class="dropdown"><a href="productos.html">
-                            Categorias
-                            <div class="dropdown-content">
-                            <a href="componentes.html">Componentes de pc</a>
-                            <a href="pcs.html">PCs de Escritorio</a>
-                            <a href="notebook.html">Notebooks</a>
-                            <a href="monitores.html">Monitores</a>
-                            <a href="impresoras.html">Impresoras</a>
-                          </div></a></li>
+                        <li class="dropdown"><p >
+                                Categorias <span class="chevron-down"> <i class='bx bx-chevron-down' ></i></span>
+                                <div class="dropdown-content">
+                                    <a href="componentes.html">Componentes de pc</a>
+                                    <a href="pcs.html">PCs de Escritorio</a>
+                                    <a href="notebook.html">Notebooks</a>
+                                    <a href="monitores.html">Monitores</a>
+                                    <a href="impresoras.html">Impresoras</a>
+                                </div>
+                            </p></li>
                         <li><a href="acerca.html">Nuestra Empresa</a></li>
                         <li><a href="contacto.html">Contactenos</a></li>
-                        <li><a href="https://www.mercadolibre.com.ar/" target="_blank"  >Publicaciones en mercado libre</a></li>
+                        <li><a href="https://www.mercadolibre.com.ar/" target="_blank">Publicaciones en mercado libre</a>
+                        </li>
                     </ul>
                 <!-- </section> -->
 
@@ -116,20 +118,39 @@
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+                    <section class="sellers">
+                        <p>¿Quieres comprar? Estos vendedores lo atenderán:</p>
+                        <div  id="app">
+                           
+                            <table>
+                    
+                                <tr>
+                                   
+                                    <th>Nombre</th>
+                                    <th>WhatsApp</th>
+                                    <th>Mail</th> 
+                                   
+                                </tr>
+                                <tr v-for="elemento in datos">
+                                    
+                                   
+                                    <td>{{elemento.nombre}}</td>
+                                    <td>{{elemento.celular}}</td>
+                                    <td>{{elemento.mail}}</td>
+                               
+                                </tr>
+                            </table>
+                        </div>
+        
+                      
+                    </section>
                 </div>
-                <!-- Inicio Formulario -->
-                <section class="formulario">
-                    <div class="form">
-                        <p>¿Buscas lista de precios?</p>
-                        <input type="text" placeholder="Ingrese su nombre">
-                        <input type="email" placeholder="Ingrese su Email">
-                        <input type="tel" placeholder="(codigo de area) número">
-                        <textarea rows="3" placeholder="¿Como te podemos ayudar?"></textarea>
-                        <button class="button">Enviar</button>
+                
+                <div class="go-top-container">
+                    <div class="go-top-btn">
+                        <i class="fas fa-chevron-up"></i>
                     </div>
-                </section>
-                <!-- Fin Formulario -->
-
+                </div>
             
         </main>
         <footer class="footer">
@@ -154,21 +175,23 @@
                 <div class="follow-footer">
                     <h2>SÍGUENOS EN:</h2>
                 <div class="red-social">
-                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" ></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"  ></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank" ></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank" ></a>
                 </div>
             </div>
             <div class="footer-inf">
                 <p>2023 <b>Digital Tech</b> -Todos los derechos reservados-Defensa del consumidor-Para reclamos
-                    <a href="https://autogestion.produccion.gob.ar/consumidores" rel="Defensa del consumidor">INGRESE
+                    <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank" rel="Defensa del consumidor">INGRESE
                         AQUÍ</a>
                 </p>
             </div>
         </footer>
 
     </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- <script src="asesores.json"></script>    -->
 <script src="js/scripts.js"></script>
 </body>
 

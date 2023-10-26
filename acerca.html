@@ -43,7 +43,7 @@
                                 <i class="fa fa-shopping-cart">
                                 </i>
                         </a>
-                        <span id="contArticulos" class="" style="padding-left: 10px;">0</span>
+                        <span id="contArticulos" class="contador" style="padding-left: 10px;">0</span>
                         </i>
                     </div>
                 </div>
@@ -61,8 +61,8 @@
                 <ul id="sliding_menu">
                     <li><span class="close" onclick="ocultar()">X</span></li>
                     <li><a href="index.html">Inicio</a></li>
-                    <li class="dropdown"><a href="productos.html">
-                            Categorias
+                    <li class="dropdown"><p >
+                            Categorias <span class="chevron-down"> <i class='bx bx-chevron-down' ></i></span>
                             <div class="dropdown-content">
                                 <a href="componentes.html">Componentes de pc</a>
                                 <a href="pcs.html">PCs de Escritorio</a>
@@ -70,10 +70,11 @@
                                 <a href="monitores.html">Monitores</a>
                                 <a href="impresoras.html">Impresoras</a>
                             </div>
-                        </a></li>
+                        </p></li>
                     <li><a href="acerca.html">Nuestra Empresa</a></li>
                     <li><a href="contacto.html">Contactenos</a></li>
-                    <li><a href="https://www.mercadolibre.com.ar/" target="_blank" >Publicaciones en mercado libre</a></li>
+                    <li><a href="https://www.mercadolibre.com.ar/" target="_blank">Publicaciones en mercado libre</a>
+                    </li>
                 </ul>
                 <!-- </section> -->
 
@@ -135,44 +136,7 @@
 
 
             </section>
-            <section class="sellers">
-                <p>¿Quieres comprar? Estos vendedores lo atenderán:</p>
-
-                <table>
-                    <tr>
-                        <td>Pablo</td>
-                        <td>whatsApp xxxxxxxxx</td>
-                        <td>Mail xxxxxx@xxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Claudia</td>
-                        <td>whatsApp xxxxxxxxx</td>
-                        <td>Mail xxxxxx@xxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Jose</td>
-                        <td>whatsApp xxxxxxxxx</td>
-                        <td>Mail xxxxxx@xxxx</td>
-                    </tr>
-                </table>
-
-                <p>¿Tienes una Empresa ?
-                    Tenemos precios y oportunidades especiales:
-                </p>
-                <table>
-                    <tr>
-                        <td>Luis</td>
-                        <td>whatsApp xxxxxxxxx</td>
-                        <td>Mail xxxxxx@xxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Ana</td>
-                        <td>whatsApp xxxxxxxxx</td>
-                        <td>Mail xxxxxx@xxxx</td>
-                    </tr>
-                </table>
-
-            </section>
+            
             <section class="acerc-sign">
 
                 <p class="poligono"></p>
@@ -187,37 +151,43 @@
                     <h3>Titular</h3>
                     <p>Digital Tech</p>
                     <h3>C.U.I.T</h3>
-                    <p>xxxxxxxxxxxxxxx</p>
+                    <p>23-15712368-7</p>
                 </div>
                 <div class="cbu-card">
                     <img src="img/galicia.png" alt="">
                     <h3>C.B.U</h3>
-                    <p>xxxxxxxxxxxxxxx</p>
+                    <p>125436945632</p>
                     <h3>Alias</h3>
-                    <p>xxxxxxxxxxxxxxx</p>
+                    <p>casa-perro-auto</p>
                 </div>
                 <div class="cbu-card">
                     <img src="img/macro.png" alt="">
                     <h3>C.B.U</h3>
-                    <p>xxxxxxxxxxxxxxx</p>
+                    <p>2546897452365</p>
                     <h3>Alias</h3>
-                    <p>xxxxxxxxxxxxxxx</p>
+                    <p>poni-arbol-casa</p>
                 </div>
                 <div class="cbu-card">
                     <img src="img/mercadopago.png" alt="">
                     <h3>C.B.U</h3>
-                    <p>xxxxxxxxxxxxxxx</p>
+                    <p>578456218759</p>
                     <h3>Alias</h3>
-                    <p>xxxxxxxxxxxxxxx</p>
+                    <p>pino-dado-gato</p>
                 </div>
 
             </section>
 
 
 
+            <div class="go-top-container">
+                <div class="go-top-btn">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+            </div>
 
-
-
+          
+            
+        </div>
         </main>
         <footer class="footer">
             <div class="footer-sup">
@@ -241,26 +211,29 @@
                 <div class="follow-footer">
                     <h2>SÍGUENOS EN:</h2>
                     <div class="red-social">
-                        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                        <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
-                        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                        <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" ></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank" ></a>
+                        <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank" ></a>
+                        <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank" ></a>
                     </div>
                 </div>
                 <div class="footer-inf">
                     <p>2023 <b>Digital Tech</b> -Todos los derechos reservados-Defensa del consumidor-Para reclamos
-                        <a href="https://autogestion.produccion.gob.ar/consumidores"
+                        <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank"
                             rel="Defensa del consumidor">INGRESE
                             AQUÍ</a>
                     </p>
                 </div>
         </footer>
     </div>
-    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/datos.json"></script> 
+   
+    <script src="./js/scripts.js"></script>
+   
 </body>
 
 </html>
-
 
 
 
