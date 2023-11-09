@@ -124,7 +124,7 @@ body {
 /*Contenedor navbar*/
 .nav {
   grid-column-end: span 12;
-  background:  #24488f;
+  background:  #2a3b5c;
   width: 100%;
   height: 50px;
 }
@@ -146,12 +146,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 .navbar ul li span {
-  color:  #24488f;
+  color:  #2a3b5c;
 }
 
 .navbar ul li a:hover {
  
-  background: #24488f;
+  background: #2a3b5c;
   color: var(--bg-color);
 }
 .navbar ul li .chevron-down {
@@ -469,7 +469,7 @@ p {
   width: 35%;
   height: 100px;
   transform: skew(20deg);
-  background: #1d2fcc;
+  background: #2a3b5c;
   margin-top: 1em;
   margin-left: 2em;
   z-index: 0;
@@ -484,7 +484,7 @@ p {
   padding-top: 0.2em;
   padding-left: 1rem;
   transform: skew(20deg);
-  background: rgb(97, 155, 10);
+  background: rgb(63, 95, 18);
   margin-top: 1em;
   margin-left: 2.5em;
   z-index: 1;
@@ -547,7 +547,7 @@ p {
   font-size: 2.5rem;
   padding-top: 30px;
   transform: skew(20deg);
-  background: rgb(97, 155, 10);
+  background: rgb(183, 219, 129);
   margin-top: 45px;
   margin-left: 200px;
   margin-bottom: 10px;
@@ -694,7 +694,7 @@ form {
   margin: 50px auto;
   width: 20rem;
   padding: 1em;
-  background:  rgb(97, 155, 10);
+  background:  rgb(183, 219, 129);
   border: 1px solid #ccc;
   border-radius: 1em;
   box-shadow: var(--primary-shadow);
