@@ -569,7 +569,7 @@ p {
 }
 
 .cbu-card {
-  width: 70%;
+  width: 80%;
   font-family: 'Ubuntu', sans-serif;
   background: #dadcec;
   border: 1px solid var(--black-color);
@@ -1057,6 +1057,9 @@ form {
     grid-column-end: span 12;
     width: 70%;
     margin: 10px auto;
+  }
+  .cbu-card {
+    width: 100%;
   }
   .certificaition {
     width: 70%;
